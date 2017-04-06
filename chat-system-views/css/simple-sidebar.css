@@ -1,0 +1,185 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+ body {
+    overflow-x: hidden;
+ }
+.fa{display: inline; font-size: 70%;}
+.online i{color: #38978D;}
+.right-icon{float: right; margin-right: 20px; font-weight: 900; font-size: 120%;}
+#threads i{font-size: 100%;}
+#chat-team{font-weight: 900;line-height: 22px; margin-top: 10px;}
+#chat-username{ line-height: 22px; font-size: 14px;}
+#invite-people{
+    border-bottom: 1px dotted #AB9BA9; display: inline; padding-bottom: 5px;
+    font-size: 100%; font-weight: 800;
+}
+#invite-people:hover{background: none; border-bottom: 1px solid #AB9BA9;}
+/* Toggle Styles */
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #4D394B;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 70px;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav a, .second-level li a{
+    display: block;
+    text-decoration: none;
+    color: #AB9BA9;
+}
+.second-level li a{
+    text-transform: lowercase;
+}
+
+.sidebar-nav li a:hover,  .second-level li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(0,0,0,0.2);
+}
+.sidebar-nav li .right-icon:hover{background: none;}
+.chat-timeline{
+    text-transform: uppercase;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    position: fixed;
+    background: #4D394B;
+    width: 250px;
+    top: 0px;
+}
+.sidebar-nav > .sidebar-brand:hover {
+    background: rgba(0,0,0,0.2)
+}
+.sidebar-nav > .sidebar-brand a {
+    color: #FFFFFF;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+.second-level{
+    padding: 0; margin: 0;
+}
+.second-level li{
+    list-style: none;
+    line-height: 22px;
+}
+.sidebar-nav > .second-level a {
+    text-transform: lowercase;
+}
+#profile-menu {width: 300px;}
+#profile-menu li a{color: initial !important; text-indent: 0px; }
+#profile-menu li a:hover{background:#007AB8; color: white !important; }
+#profile-menu .profile-title {
+    padding: 10px 20px;
+    overflow: hidden;
+}
+#profile-menu .profile-title span{
+    display: block;
+    line-height: 20px;
+    padding-left: 0;
+}
+#profile-menu .profile-heading{font-weight: 900; font-size: 130%;}
+#profile-menu .profile-subheading{color: grey;}
+#profile-menu .profile-title .avatar{
+    padding: 10px;
+    min-width: 45px;
+    min-height: 45px;
+    border-radius: 5px;
+    display: inline-block;
+    float: left;
+    font-size: 20px;
+    font-weight: 900;
+    color: white !important;
+    background: #4D394B;
+}
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 0;
+    }
+
+    #wrapper.toggled {
+        padding-left: 250px;
+    }
+
+    #sidebar-wrapper {
+        width: 0;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #page-content-wrapper {
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
