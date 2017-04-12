@@ -38,7 +38,7 @@ class ChatUser{
 	
 	public function select($userId)
 	{
-		$link = mysqli_connect("localhost", "alesanchezr", "");
+		$link = mysqli_connect("localhost", "kamekaze997", "");
 		if($link!=false)
 		{
 			$db_selected = mysqli_select_db($link,"c9");

@@ -44,7 +44,7 @@ class ChatMessage{
 	}
 	
 	public function insert(){
-		$link = mysqli_connect("localhost", "alesanchezr", "");
+		$link = mysqli_connect("localhost", "kamekaze997", "");
 		if($link!=false)
 		{
 			$db_selected = mysqli_select_db($link,"c9");
@@ -77,15 +77,14 @@ class ChatMessage{
         return array(
         	"timestamp" => $this->timestamp,
         	"content" => $this->content,
-        	"author" => $this->author->toArray($size),
-        	"timeline" => $this->timeline->toArray($size)
+        	"author" => $this->author->toArray($size)
         	);
     }
     
 	
 	public function select($messageId)
 	{
-		$link = mysqli_connect("localhost", "alesanchezr", "");
+		$link = mysqli_connect("localhost", "kamekaze997", "");
 		if($link!=false)
 		{
 			$db_selected = mysqli_select_db($link,"c9");

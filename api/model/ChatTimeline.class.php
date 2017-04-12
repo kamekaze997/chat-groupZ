@@ -58,34 +58,9 @@ class ChatTimeline{
 		$this->messages = array();
 	}
 	
-	private function select($chatTimelineId){
-		$link = mysqli_connect("localhost", "alesanchezr", "");
-		if($link!=false)
-		{
-			$db_selected = mysqli_select_db($link,"c9");
-			if($db_selected!=false)
-			{
-				$queryString = "SELECT id,name FROM CHAT_TIMELINE WHERE id = ".$chatTimelineId;
-				$result = mysqli_query($link,$queryString);
-				if(mysqli_num_rows($result)==1)
-				{
-					$row = mysqli_fetch_object($result);
-					$this->id = $row->id;
-					$this->name = $row->name;
-					
-					return $this;
-				}
-			}
-			
-			mysqli_close($link);
-		}
-		
-		return null;
-	}
-	
 	public function select($timelineId)
 	{
-		$link = mysqli_connect("localhost", "alesanchezr", "");
+		$link = mysqli_connect("localhost", "kamekaze997", "");
 		if($link!=false)
 		{
 			$db_selected = mysqli_select_db($link,"c9");
